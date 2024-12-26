@@ -1,0 +1,1567 @@
+1. My first web page
+
+<!DOCTYPE html>
+
+<head>
+    <title>My First Web Page</title>
+</head>
+
+<body>
+    <!-- Moving text -->
+    <marquee>Welcome to </marquee>
+
+    <!-- Different heading tags -->
+    <h1>This is an H1 heading</h1>
+    <h2>This is an H2 heading</h2>
+    <h3>This is an H3 heading</h3>
+    <h4>This is an H4 heading</h4>
+    <h5>This is an H5 heading</h5>
+    <h6>This is an H6 heading</h6>
+
+    <!-- Paragraph -->
+    <p>This is a paragraph demonstrating the use of the paragraph tag in HTML.</p>
+
+    <!-- Horizontal line -->
+    <hr>
+
+    <!-- Line break -->
+    <p>This is a line of text before the break.<br>This is a line of text after the break.</p>
+
+    <!-- Block Quote -->
+    <blockquote>
+        This is a blockquote. It is used to display a quotation or excerpt from another source.
+    </blockquote>
+
+    <!-- Pre tag -->
+    <pre>
+This is preformatted text.
+It preserves spaces and line breaks.
+    </pre>
+
+    <!-- Different Logical Style tags -->
+    <p>This is <b>bold</b> text.</p>
+    <p>This is <i>italicized</i> text.</p>
+    <p>This is <u>underlined</u> text.</p>
+    <p>This is <sup>superscript</sup> text.</p>
+    <p>This is <sub>subscript</sub> text.</p>
+    <p>This is <em>emphasized</em> text.</p>
+    <p>This is <strong>strong</strong> text.</p>
+    <p>This is <mark>highlighted</mark> text.</p>
+    <p>This is <small>small</small> text.</p>
+    <p>This is <del>deleted</del> text.</p>
+    <p>This is <ins>inserted</ins> text.</p>
+    <p>This is <code>inline code</code> text.</p>
+</body>
+
+</html>
+
+2.TABLE.HTML
+
+<!DOCTYPE html>
+
+<head>
+
+    <title>Time Table </title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #e6f7ff;
+        }
+
+        .lab-hour {
+            background-color: #ffcccc;
+        }
+
+        .elective-hour {
+            background-color: #ccffcc;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d63384;
+        }
+
+        tfoot {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Time Table</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Day/Time</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 12:00</th>
+                <th>12:00 - 1:00</th>
+                <th>Lunch Break</th>
+                <th>2:00 - 3:00</th>
+                <th>3:00 - 4:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Math</td>
+                <td>English</td>
+                <td class="lab-hour">Physics Lab</td>
+                <td>Elective</td>
+                <td rowspan="5" class="highlight">Break</td>
+                <td class="elective-hour">Elective</td>
+                <td>History</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td class="elective-hour">Elective</td>
+                <td>Biology</td>
+                <td>Math</td>
+                <td class="lab-hour">Chemistry Lab</td>
+                <td>Geography</td>
+                <td>PE</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>History</td>
+                <td class="lab-hour">Computer Lab</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>Physics</td>
+                <td class="elective-hour">Elective</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>PE</td>
+                <td>History</td>
+                <td>Geography</td>
+                <td class="elective-hour">Elective</td>
+                <td>Biology</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td class="lab-hour">Biology Lab</td>
+                <td>Math</td>
+                <td>English</td>
+                <td>Physics</td>
+                <td class="elective-hour">Elective</td>
+                <td>Chemistry</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="8">End of Timetable</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
+
+3.external style sheet named as "style.css
+
+<!DOCTYPE html>
+
+<head>
+    <title>Styled HTML Page </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Main Heading</h2>
+    <h3>Subheading</h3>
+    <hr>
+    <p>This is a paragraph demonstrating the basic text styling applied by CSS.</p>
+
+    <div>
+        This is a styled <strong>div</strong> element with padding and a light border. Inside the div, we can also use
+        <span>span elements</span> that have their own styles, like this bold and orange text.
+    </div>
+
+    <p>Current time: <time>10:30 AM</time></p>
+
+    <img src="https://vtucode.in/wp-content/uploads/2024/08/Web-Technology-Lab.jpg" alt="Placeholder Image">
+
+    <p>Visit <a href="https://vtucode.in">vtucode.in</a> to learn more about our services.</p>
+
+    <p class="highlight">This paragraph is highlighted with a yellow background.</p>
+    <p class="center">This text is centered using a class selector.</p>
+
+    <p id="special-paragraph">This is a special paragraph with unique styles applied through an ID selector.</p>
+
+</body>
+
+</html>
+
+
+Style.css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #e74c3c;
+    margin: 20px 0;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+div {
+    padding: 15px;
+    border: 1px solid #bdc3c7;
+    background-color: #ecf0f1;
+}
+
+span {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+time::before {
+    content: '? ';
+    color: #16a085;
+}
+
+img {
+    margin-left: 15px;
+    height: 300px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #ea0e4c;
+}
+
+a:hover {
+    color: #6200ee;
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 3px;
+}
+
+.center {
+    text-align: center;
+}
+
+#special-paragraph {
+    font-size: 1.2em;
+    color: #8e44ad;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-left: 5px solid #8e44ad;
+}
+
+h2,
+h3,
+p {
+    margin-left: 20px;
+}
+
+4.registration.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 20px; }
+        table { width: 100%; margin-top: 20px; }
+        th, td { padding: 10px; text-align: left; }
+        th { background: #4CAF50; color: white; }
+        td { background: white; }
+        input, select { width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 4px; }
+        .btn { background: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        .btn:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center;">Registration Form</h2>
+
+<form>
+    <table>
+        <tr><th colspan="2">Personal Information</th></tr>
+        <tr><td>Full Name:</td><td><input type="text" required></td></tr>
+        <tr><td>Email:</td><td><input type="email" required></td></tr>
+        <tr><td>Password:</td><td><input type="password" required></td></tr>
+        <tr><td>Date of Birth:</td><td><input type="date" required></td></tr>
+        <tr><td>Gender:</td><td><select><option>Male</option><option>Female</option><option>Other</option></select></td></tr>
+        <tr><td colspan="2" style="text-align: center;"><button class="btn" type="submit">Register</button></td></tr>
+    </table>
+</form>
+
+</body>
+</html>
+5.newspaper.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 200px;
+            background-color: #f0f4f8;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        section {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        article {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figure img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        figure figcaption {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #444;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to the Daily Times</h1>
+        <p>Your Source for Reliable News</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#news">News</a>
+        <a href="#sports">Sports</a>
+        <a href="#entertainment">Entertainment</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Sidebar -->
+        <aside>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">World News</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Health</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Section -->
+        <section>
+            <h2>Top Stories</h2>
+            <!-- Article 1 -->
+            <article>
+                <h3>Global Market Updates</h3>
+                <p>The global markets witnessed a significant surge today...</p>
+            </article>
+
+            <!-- Article 2 -->
+            <article>
+                <h3>Sports: Upcoming Matches</h3>
+                <p>Stay tuned for the latest schedule of your favorite teams...</p>
+            </article>
+
+            <!-- Figure Example -->
+            <figure>
+                <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                <figcaption>A scenic view of the mountains.</figcaption>
+            </figure>
+
+            <!-- Table Example -->
+            <h3>Upcoming Events</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Event</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dec 20, 2024</td>
+                        <td>Tech Summit</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 15, 2025</td>
+                        <td>Sports Gala</td>
+                        <td>Los Angeles</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Daily Times. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+6.simple calculator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; /* Equal vertical spacing */
+            margin: 20px 0;
+        }
+        input, select, button {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px; /* Uniform width for all elements */
+        }
+        #result { margin-top: 20px; font-size: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <div class="calculator">
+        <input id="num1" type="number" placeholder="Enter first number">
+        <select id="operation">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select>
+        <input id="num2" type="number" placeholder="Enter second number">
+        <button onclick="calculate()">Calculate</button>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        function calculate() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const operation = document.getElementById('operation').value;
+            let result;
+
+            switch (operation) {
+                case 'add': result = num1 + num2; break;
+                case 'subtract': result = num1 - num2; break;
+                case 'multiply': result = num1 * num2; break;
+                case 'divide': result = num2 !== 0 ? num1 / num2 : 'Error: Division by zero'; break;
+                default: result = 'Invalid operation';
+            }
+
+            document.getElementById('result').textContent = Result: ${result};
+        }
+    </script>
+</body>
+</html>
+
+7. JavaScript program
+<!DOCTYPE html>
+     <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/cryptojs.min.js"></script>
+    <title>Simple Converter </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #000000;
+        }
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .head-title h1 {
+            font-size: 28px;
+            padding: 10px;
+            color: #fff;
+            margin-bottom: 50px;
+        }
+
+        .head-title {
+            width: 100%;
+            background: #000;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+
+        .section h2 {
+            color: #000000;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+
+        textarea {
+            font-size: 14px;
+            width: 100%;
+            height: 120px;
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #00000022;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        textarea:focus {
+            background: transparent;
+            border: 1px solid #00000022;
+            border-color: #007BFF;
+            box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 24px);
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007BFF;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+        button {
+            display: inline-block;
+            padding: 15px 15px;
+            margin: 10px 0;
+            font-weight: 600;
+            border: none;
+            border-radius: 7px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            box-shadow: 0 0 0 2px #fff, 0 0 0 4px #007BFF;
+        }
+
+        button:focus {
+            box-shadow: 0 0 0 2px #fff, 0 0 0 4px #007BFF;
+        }
+
+        pre {
+            display: none;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            overflow: auto;
+            transition: opacity 0.3s ease;
+        }
+
+        .error {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #000;
+            background: #ffdddd;
+            border-color: #ff0000;
+            padding: 10px;
+        }
+
+        .success {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #000;
+            background: #6ef08d38;
+            border-color: #47e56d;
+            padding: 10px;
+        }
+
+        .adjust-area {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head-title">
+            <h1>Simple Converter</h1>
+        </div>
+        <div class="section">
+            <h2>1. Convert JSON Text to JavaScript Object</h2>
+            <textarea id="jsonInput" placeholder="Enter JSON here..."></textarea>
+            <button onclick="convertJsonToObject()">Convert JSON</button>
+            <pre id="jsonOutput" class="output"></pre>
+        </div>
+
+        <div class="section">
+            <h2>2. Convert JSON Results into Date</h2>
+            <textarea id="jsonDateInput" placeholder='Enter JSON with date in "yyyy-mm-dd" format'></textarea>
+            <button onclick="convertJsonToDate()">Convert to Date</button>
+            <pre id="jsonDateOutput" class="output"></pre>
+        </div>
+
+        <div class="section">
+            <h2>3. Convert JSON to CSV and CSV to JSON</h2>
+            <textarea id="jsonCsvInput" placeholder="Enter JSON for CSV conversion..."></textarea>
+            <button onclick="convertJsonToCsv()">JSON to CSV</button>
+            <pre id="csvOutput" class="output"></pre>
+            <textarea id="csvInput" placeholder="Enter CSV here..." class="adjust-area"></textarea>
+            <button onclick="convertCsvToJson()">CSV to JSON</button>
+            <pre id="jsonCsvOutput" class="output"></pre>
+        </div>
+
+        <div class="section">
+            <h2>4. Create Hash from String</h2>
+            <input type="text" id="hashInput" placeholder="Enter string to hash">
+            <button onclick="createHash()">Create Hash</button>
+            <pre id="hashOutput" class="output"></pre>
+        </div>
+    </div>
+
+    <script>
+        function showResult(id, text, isSuccess) {
+            const element = document.getElementById(id);
+            element.textContent = text;
+            element.className = isSuccess ? 'success' : 'error';
+            element.style.display = 'block';
+            element.style.opacity = '1';
+        }
+
+        function convertJsonToObject() {
+            const jsonInput = document.getElementById('jsonInput').value;
+            try {
+                const jsonObject = JSON.parse(jsonInput);
+                showResult('jsonOutput', JSON.stringify(jsonObject, null, 2), true);
+            } catch (error) {
+                showResult('jsonOutput', 'Invalid JSON', false);
+            }
+        }
+
+        function convertJsonToDate() {
+            const jsonDateInput = document.getElementById('jsonDateInput').value;
+            try {
+                const data = JSON.parse(jsonDateInput);
+                if (data.date && !isNaN(new Date(data.date).getTime())) {
+                    const date = new Date(data.date);
+                    showResult('jsonDateOutput', date.toString(), true);
+                } else {
+                    showResult('jsonDateOutput', 'Invalid Date Format', false);
+                }
+            } catch (error) {
+                showResult('jsonDateOutput', 'Invalid JSON', false);
+            }
+        }
+
+        function convertJsonToCsv() {
+            const jsonInput = document.getElementById('jsonCsvInput').value;
+            try {
+                const jsonArray = JSON.parse(jsonInput);
+                if (Array.isArray(jsonArray) && jsonArray.length > 0) {
+                    const keys = Object.keys(jsonArray[0]);
+                    const csv = [
+                        keys.join(','),
+                        ...jsonArray.map(row => keys.map(key => JSON.stringify(row[key])).join(','))
+                    ].join('\n');
+                    showResult('csvOutput', csv, true);
+                } else {
+                    showResult('csvOutput', 'Invalid JSON: Expected an array with objects.', false);
+                }
+            } catch (error) {
+                showResult('csvOutput', 'Invalid JSON', false);
+            }
+        }
+
+        function convertCsvToJson() {
+            const csvInput = document.getElementById('csvInput').value;
+            try {
+                const lines = csvInput.trim().split('\n');
+                if (lines.length > 1) {
+                    const keys = lines[0].split(',');
+                    if (keys.length > 0) {
+                        const jsonArray = lines.slice(1).map(line => {
+                            const values = line.split(',');
+                            return keys.reduce((obj, key, index) => {
+                                obj[key] = values[index];
+                                return obj;
+                            }, {});
+                        });
+                        showResult('jsonCsvOutput', JSON.stringify(jsonArray, null, 2), true);
+                    } else {
+                        showResult('jsonCsvOutput', 'Invalid CSV: No columns found.', false);
+                    }
+                } else {
+                    showResult('jsonCsvOutput', 'Invalid CSV: No data found.', false);
+                }
+            } catch (error) {
+                showResult('jsonCsvOutput', 'Invalid CSV', false);
+            }
+        }
+
+        function createHash() {
+            const hashInput = document.getElementById('hashInput').value.trim();
+            if (hashInput.length > 0) {
+                const hash = CryptoJS.SHA256(hashInput).toString();
+                showResult('hashOutput', hash, true);
+            } else {
+                showResult('hashOutput', 'Input cannot be empty', false);
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+8. PHP program
+a. Develop a PHP program (with HTML/CSS) to keep track of the number of visitors visiting the web page and to display this count of visitors, with relevant headings.
+<?php
+$counterFile = "counter.txt";
+
+if (!file_exists($counterFile)) {
+    file_put_contents($counterFile, "0");
+}
+
+$currentCount = file_get_contents($counterFile);
+
+$newCount = $currentCount + 1;
+
+file_put_contents($counterFile, $newCount);
+?>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Visitor Counter |</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 0 auto;
+          
+  width: 60%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Our Website!</h1>
+        <p>You are visitor number: <strong><?php echo $newCount; ?></strong></p>
+    </div>
+</body>
+
+</html>
+Output
+
+
+b. Develop a PHP program (with HTML/CSS) to sort the student records which are stored in the database using selection sort
+Below is a PHP program to sort student records by their marks using selection sort. This program retrieves data from a MySQL database, sorts the records by marks in ascending order, and displays the sorted data in an HTML table.
+
+Database: MySQL database with a table named students having columns: id, name, and marks.
+Database Setup: 
+* Start XAMPP servers and go to shell
+* Add command to change root to databases   
+*  mysql -u root
+* Create database database_name;      // student
+* Use database;        // student
+* CREATE TABLE students ( id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(100) NOT NULL, marks INT NOT NULL );
+* INSERT INTO students (name, marks) VALUES ('John', 85), ('Alice', 90), ('Bob', 75), ('Eve', 95), ('Charlie', 70);
+
+* Describe database;
+
+* Select *from student;
+* Open your favourite browser; we recommend using Google Chrome or Mozilla Firefox.
+* Then, go to the URL http://localhost/record.php.
+PROGRAM:
+  <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "student";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM student";
+$result = $conn->query($sql);
+
+$student = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $student[] = $row;
+    }
+}
+
+
+function selectionSort(&$arr, $key)
+{
+    $n = count($arr);
+    for ($i = 0; $i < $n - 1; $i++) {
+        $minIndex = $i;
+        for ($j = $i + 1; $j < $n; $j++) {
+            if ($arr[$j][$key] < $arr[$minIndex][$key]) {
+                $minIndex = $j;
+            }
+        }
+
+        $temp = $arr[$i];
+        $arr[$i] = $arr[$minIndex];
+        $arr[$minIndex] = $temp;
+    }
+}
+
+selectionSort($student, 'name');
+?>
+
+<!DOCTYPE html>
+
+<head>
+    <title>Sorted Student Records </title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4A90E2;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        th,
+        td {
+            padding: 6px 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4A90E2;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        tr {
+           
+ transition: background-color 0.3s ease;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+
+            table,
+            th,
+            td {
+                display: block;
+                width: 50%;
+            }
+
+            th,
+            td {
+                box-sizing: border-box;
+            }
+
+            tr {
+                margin-bottom: 8px;
+                display: block;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            th {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            td {
+                border: none;
+                position: relative;
+                padding-left: 10%;
+                text-align: right;
+            }
+
+            td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 20%;
+                padding-left: 2px;
+                font-weight: bold;
+                text-align: left;
+                text-transform: uppercase;
+                color: #4A90E2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+   
+ <h2>Sorted Student Records by Name</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>USN</th>
+                <th>Name</th>
+                <th>marks</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($student as $student): ?>
+                <tr>
+                    <td data-label="ID"><?php echo htmlspecialchars($student['usn']); ?></td>
+                    <td data-label="Name"><?php echo htmlspecialchars($student['name']); ?></td>
+                    <td data-label="USN"><?php echo htmlspecialchars($student['marks']); ?></td>
+                    
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
+9.animation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Script</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* CSS Styles */
+        #animatedDiv {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+        }
+        .highlight {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Functionality</h1>
+    <p id="paragraph">This is an example paragraph.</p>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button id="appendContent">Append Content</button>
+    <button id="animateDiv">Animate & Change Style</button>
+    <div id="animatedDiv"></div>
+
+    <script>
+        // jQuery Script
+        $(document).ready(function () {
+            // a. Append content at the end of paragraph and list
+            $('#appendContent').click(function () {
+                $('#paragraph').append(' Appended text.');
+                $('#list').append('<li>New Item</li>');
+            });
+
+            // b. Change the state of an element using animate()
+            $('#animateDiv').click(function () {
+                $('#animatedDiv').animate({
+                    left: '+=100px',
+                    height: '150px',
+                    width: '150px'
+                }, 1000, function () {
+                    // c. Change the color of the animated div
+                    $(this).css('background-color', 'red');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+10.ajax
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX Examples</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    body, h1, #content {
+         font-family: Arial, sans-serif; 
+         text-align: center; 
+         padding: 0; 
+         margin: 0;
+         }
+    body {
+         background: #f4f4f9; 
+        }
+    h1 { 
+        padding: 20px 0; 
+        color: #333; 
+    }
+    #content { 
+        display: flex; 
+        flex-direction: column; 
+        width: 300px; 
+        margin: 20px auto; 
+        padding: 20px; 
+        border-radius: 8px; 
+        background: #fff; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+    button { margin: 12px;
+         padding: 10px 15px; 
+         background: #007bff; 
+         color: #fff; 
+         border: none; 
+         border-radius: 
+         5px; cursor: pointer; 
+        }
+    button:hover {
+         box-shadow: 0 0 4px #007bff; 
+        }
+    #output { 
+        display: none;
+         margin-top: 20px;
+          padding: 10px;
+           max-height: 300px;
+            overflow-y: auto;
+             background: #f0f8ff; 
+            }
+  </style>
+</head>
+<body>
+  <h1>AJAX Examples</h1>
+  <div id="content">
+    <button id="plain-ajax-btn">Load Text (Plain AJAX)</button>
+    <button id="jquery-ajax-btn">Load Text (jQuery AJAX)</button>
+    <button id="jquery-json-btn">Load JSON (jQuery getJSON)</button>
+    <button id="parse-json-btn">Load and Parse JSON (jQuery get)</button>
+    <div id="output"></div>
+  </div>
+  <script>
+    // Utility function to display output
+    function showOutput(text) {
+      $('#output').text(text).show();
+    }
+
+    // Simplified AJAX examples
+    // Function to handle both text and JSON file loading
+function loadData(url, isJson = false) {
+  const request = isJson ? $.getJSON(url) : $.get(url);
+
+  request.done(data => showOutput(isJson ? JSON.stringify(data, null, 2) : data))
+         .fail(() => showOutput('Error loading file.'));
+}
+
+$('#plain-ajax-btn').on('click', () => loadData('textfile.txt'));
+$('#jquery-ajax-btn').on('click', () => loadData('textfile.txt'));
+$('#jquery-json-btn').on('click', () => loadData('data.json', true));
+$('#parse-json-btn').on('click', () => loadData('data.json', true));
+
+  </script>
+</body>
+</html>
+
+
+5.5th web dev-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        h2{
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: left;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 200px;
+            background-color: #f0f4f8;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        section {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        article {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figure img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        figure figcaption {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #444;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Newspaper</h1>
+        <p>Your Source for Reliable News</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#news">News</a>
+        <a href="#sports">Sports</a>
+        <a href="#entertainment">Entertainment</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Sidebar -->
+        <aside>
+            <h2>related news</h2>
+            <ul>
+                <li><a href="#">related news 1</a></li>
+                <li><a href="#">related news 2</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Health</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Section -->
+        <section>
+            <h2>Top articles</h2>
+            <!-- Article 1 -->
+            <article>
+                <h3>article 1</h3>
+                <p>The global markets witnessed a significant surge today...</p>
+                <figure>
+                    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                    <figcaption>A scenic view of the mountains.</figcaption>
+                </figure>
+            </article>
+
+            <!-- Article 2 -->
+            <article>
+                <h3>article 2</h3>
+                <p>Stay tuned for the latest schedule of your favorite teams...</p>
+                <figure>
+                    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+                    <figcaption>A scenic view of the mountains.</figcaption>
+                </figure>
+            </article>
+
+            <!-- Table Example -->
+            <h3>recent posts</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>post title</th>
+                        <th>date</th>
+                        <th>author</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dec 20, 2024</td>
+                        <td>Tech Summit</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 15, 2025</td>
+                        <td>Sports Gala</td>
+                        <td>Los Angeles</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Daily Times..</p>
+    </footer>
+</body>
+</html>
+
+
+9.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Script</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Simple and clean styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px black;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            color: black;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>jQuery Functionality</h1>
+        <p id="paragraph">This is an example paragraph.</p>
+        <ul id="list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <button id="appendContent">Append</button>
+        <button id="animateDiv">Animate</button>
+        <div id="box"></div>
+    </div>
+
+    <script>
+        // jQuery Script
+        $(document).ready(function () {
+            // a. Append content at the end of paragraph and list
+            $('#appendContent').click(function () {
+                $('#paragraph').append(' Appended text.');
+                $('#list').append('<li>New Item</li>');
+            });
+
+            // b. Change the state of an element using animate()
+            $('#animateDiv').click(function () {
+                $('#box').animate({
+                    left: '+=100px',  
+                    height: '150px',
+                    width: '150px'
+                }, 1000, function () {
+                    // c. Change the color of the animated div
+                    $(this).css('background-color', 'red');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
